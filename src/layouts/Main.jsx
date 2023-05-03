@@ -4,6 +4,7 @@ import Header from '../pages/Shared/Header/Header';
 import Footer from '../pages/Shared/Footer/Footer';
 import Home from '../pages/Home/Home';
 import ServiceItem from '../pages/SeviceItem/SeviceItem';
+import ChefCard from '../pages/ChefCard/ChefCard';
 
 
 const Main = () => {
@@ -14,6 +15,7 @@ const Main = () => {
                 
             </Home>
             <ServiceItem></ServiceItem>
+            <ChefCard></ChefCard>
             <Footer></Footer>
         </div>
     );

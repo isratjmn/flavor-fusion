@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-/* 
+
 import React from "react";
 import { createContext } from "react";
 import { getAuth } from "./firebase/auth";
@@ -16,4 +16,4 @@ const AuthProvider = ({ children }) => {
     </AuthContext.Provider>;
 };
 
-export default AuthProvider; */
+export default AuthProvider;

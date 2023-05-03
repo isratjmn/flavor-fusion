@@ -8,7 +8,6 @@ import "swiper/swiper-bundle.css";
 
 const Home = () => {
 	const carouselRef = useRef(null);
-
 	useEffect(() => {
 		new Swiper(carouselRef.current, {
 			loop: true,
