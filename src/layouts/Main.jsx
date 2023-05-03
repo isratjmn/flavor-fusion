@@ -11,9 +11,7 @@ const Main = () => {
     return (
         <div>
             <Header></Header>
-            <Home>
-                
-            </Home>
+            <Home></Home>
             <ServiceItem></ServiceItem>
             <ChefCard></ChefCard>
             <Footer></Footer>

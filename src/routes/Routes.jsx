@@ -3,6 +3,9 @@ import Main from "../layouts/Main";
 import Home from "../pages/Home/Home";
 import CardLayout from "../layouts/CardLayout";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import PrivateRoute from "../providers/PrivateRoute";
+import Cards from "../pages/Cards/Cards";
+// import CardDetails from "../pages/CardDetails/CardDetails";
 
 const router = createBrowserRouter([
 	{
@@ -14,21 +17,23 @@ const router = createBrowserRouter([
 				path: "/",
 				element: <Home></Home>,
 			},
-
+			/*{
+				path: "card-details/:id",
+				element: <CardDetails></CardDetails>,
+			}, */
 		],
 	},
 	{
-					
 		path: "cards",
 		element: <CardLayout></CardLayout>,
-        /* children: [
+		children: [
 			{
-				path: '/:id',
-				element: <p></p>
-			}
-		] */
-			
-	}
+				path: ":id",
+				element: <Cards></Cards>,
+				loader: ({params}) => fetch(`http://localhost:7000/cards/${params.id}`)
+			},
+		],
+	},
 ]);
 
 export default router;
