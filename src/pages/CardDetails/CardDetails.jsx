@@ -16,6 +16,7 @@ const CardDetails = () => {
 	}, []);
 	return (
 		<div>
+			
 			{cards.map((singleCard) => (
 				<Singlecard
 					key={singleCard._id}
