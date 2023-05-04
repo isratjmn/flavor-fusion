@@ -8,6 +8,7 @@ import "./Home.css";
 import { Navigation, Autoplay, Pagination } from "swiper";
 
 import "swiper/swiper-bundle.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	const carouselRef = useRef(null);
@@ -39,12 +40,12 @@ const Home = () => {
 							className="w-[100%] bg-cover opacity-50 h-[850px]"
 							alt="Slide1"
 						/>
-						<div className="absolute top-[300px] left-96">
+						<div className="absolute top-[400px] left-96">
 							<h1 className="w-[70%] font-extrabold text-5xl text-center">
 								Welcome to <br />{" "}
 								<span className="text-red-600">
 									{" "}
-									Flavor Fushion
+									Mediterranean Delights
 								</span>
 							</h1>
 							<p className="w-[70%] text-lg pt-2 text-center">
@@ -53,6 +54,14 @@ const Home = () => {
 								characterized by its diversity, freshness, and
 								healthiness.
 							</p>
+							<Link className="mr-72 mt-6" to="">
+								<button
+									type="button"
+									className="mt-6 focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+								>
+									View Recipe
+								</button>
+							</Link>
 						</div>
 					</div>
 				</SwiperSlide>
@@ -67,7 +76,7 @@ const Home = () => {
 							className="w-[100%] bg-cover opacity-50 h-[850px]"
 							alt="Slide1"
 						/>
-						<div className="absolute top-[300px] left-96">
+						<div className="absolute top-[400px] left-96">
 							<h1 className="w-[70%] font-extrabold text-5xl text-center">
 								Welcome to <br />{" "}
 								<span className="text-red-600">
@@ -81,6 +90,14 @@ const Home = () => {
 								characterized by its diversity, freshness, and
 								healthiness.
 							</p>
+							<Link className="mr-72" to="">
+								<button  
+									type="button"
+									className="mt-6 focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+								>
+									View Recipe
+								</button>
+							</Link>
 						</div>
 					</div>
 				</SwiperSlide>

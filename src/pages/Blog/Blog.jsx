@@ -33,7 +33,7 @@ const Blog = () => {
 				<div className="max-w-screen-xl w-[90%] mx-auto my-24">
 					<div className="grid grid-cols-1 gap-16 row-gap-8 lg:grid-cols-2">
 						<div className="space-y-8">
-							<div className="bg-indigo-200 p-8">
+							<div className="bg-red-200 p-8">
 								<h3 className="mb-4 text-2xl font-bold">
 									1. Tell us the differences between
 									uncontrolled and controlled components.
@@ -61,7 +61,7 @@ const Blog = () => {
 									input.
 								</p>
 							</div>
-							<div className="bg-indigo-200 p-8">
+							<div className="bg-red-200 p-8">
 								<h3 className="mb-4 text-2xl font-bold">
 									2. What is a custom hook, and why will you
 									create a custom hook?
@@ -79,7 +79,7 @@ const Blog = () => {
 							</div>
 						</div>
 						<div className="space-y-8">
-							<div className="bg-indigo-200 p-8">
+							<div className="bg-red-200 p-8">
 								<h3 className="mb-4 text-2xl font-bold">
 									3. Tell us the difference between nodejs and
 									express js.
@@ -98,7 +98,7 @@ const Blog = () => {
 									handling common web development tasks.
 								</p>
 							</div>
-							<div className="bg-indigo-200 p-8">
+							<div className="bg-red-200 p-8">
 								<h3 className="mb-4 text-2xl font-bold">
 									4. How to validate React props using
 									PropTypes

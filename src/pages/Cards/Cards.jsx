@@ -15,11 +15,22 @@ const Cards = () => {
 		_id,
 		chefName,
 		recipeImage,
+        recipeImage2,
+        recipeImage3,
+
 		recipeName,
+		recipeName2,
+		recipeName3,
 		numberOfRecipes,
 		rating,
+		rating2,
+		rating3,
 		cookingMethod,
+		cookingMethod2,
+		cookingMethod3,
 		ingredients,
+		ingredients2,
+		ingredients3,
 		likes,
 		chefPhoto,
 	} = cards;
@@ -30,7 +41,7 @@ const Cards = () => {
 					style={{
 						backgroundSize: "cover",
 						backgroundPosition: "center",
-                        objectFit: 'cover'
+						objectFit: "cover",
 					}}
 					className="h-[350px] w-full opacity-70"
 					src={bannerCard}
@@ -82,6 +93,102 @@ const Cards = () => {
 								readOnly
 							/>
 							<span className="ms-2">{rating}</span>
+						</p>
+						<p className="font-semibold text-xl">
+							.................
+						</p>
+
+						<div className="flex gap-3 mt-1">
+							<div className="flex items-center">
+								<p className="text-sm text-gray-500"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="grid grid-cols md:grid-cols-5 space-y-3 gap-y-4 md:gap-y-0 md:gap-4 border drop-shadow-sm p-3 md:p-5">
+					<div className="card col-span-2 flex justify-center items-center bg-gray-200 rounded-md">
+						<img
+							className="bg-cover w-full h-[70%]"
+							src={recipeImage2}
+							alt=""
+						/>
+					</div>
+					<div className="col-span-3 flex flex-col">
+						<h1 className="text-gray-800 font-bold my-1 text-2xl">
+							Recipe Name: {recipeName2}{" "}
+						</h1>
+						<br />
+						<p className=" text-lg">
+							<span className="font-extrabold">
+								Ingredients: {"  "}
+							</span>
+							{ingredients2}
+						</p>
+						<br />
+						<p className="text-lg">
+							<span className="font-extrabold">
+								Cooking Method: {"  "}
+							</span>
+							{cookingMethod2}
+						</p>
+						<br />
+						<p className="flex font-bold text-lg">
+							<Rating
+								className="flex"
+								style={{ maxWidth: 100 }}
+								value={Math.round(rating2 || 0)}
+								itemStyles={myStyles}
+								readOnly
+							/>
+							<span className="ms-2">{rating2}</span>
+						</p>
+						<p className="font-semibold text-xl">
+							.................
+						</p>
+
+						<div className="flex gap-3 mt-1">
+							<div className="flex items-center">
+								<p className="text-sm text-gray-500"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="grid grid-cols md:grid-cols-5 space-y-3 gap-y-4 md:gap-y-0 md:gap-4 border drop-shadow-sm p-3 md:p-5">
+					<div className="card col-span-2 flex justify-center items-center bg-gray-200 rounded-md">
+						<img
+							className="bg-cover w-full h-[70%]"
+							src={recipeImage3}
+							alt=""
+						/>
+					</div>
+					<div className="col-span-3 flex flex-col">
+						<h1 className="text-gray-800 font-bold my-1 text-2xl">
+							Recipe Name: {recipeName3}{" "}
+						</h1>
+						<br />
+						<p className=" text-lg">
+							<span className="font-extrabold">
+								Ingredients: {"  "}
+							</span>
+							{ingredients3}
+						</p>
+						<br />
+						<p className="text-lg">
+							<span className="font-extrabold">
+								Cooking Method: {"  "}
+							</span>
+							{cookingMethod3}
+						</p>
+						<br />
+						<p className="flex font-bold text-lg">
+							<Rating
+								className="flex"
+								style={{ maxWidth: 100 }}
+								value={Math.round(rating3 || 0)}
+								itemStyles={myStyles}
+								readOnly
+							/>
+							<span className="ms-2">{rating3}</span>
 						</p>
 						<p className="font-semibold text-xl">
 							.................
