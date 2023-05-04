@@ -5,6 +5,8 @@ import CardLayout from "../layouts/CardLayout";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 import Cards from "../pages/Cards/Cards";
+import Blog from "../pages/Blog/Blog";
+import BlogLayout from "../layouts/BlogLayout";
 // import CardDetails from "../pages/CardDetails/CardDetails";
 
 const router = createBrowserRouter([
@@ -21,7 +23,13 @@ const router = createBrowserRouter([
 				path: "card-details/:id",
 				element: <CardDetails></CardDetails>,
 			}, */
+			
 		],
+	},
+	{
+		path: "blog",
+		element: <BlogLayout/>,
+		
 	},
 	{
 		path: "cards",
@@ -30,7 +38,8 @@ const router = createBrowserRouter([
 			{
 				path: ":id",
 				element: <Cards></Cards>,
-				loader: ({params}) => fetch(`http://localhost:7000/cards/${params.id}`)
+				loader: ({ params }) =>
+					fetch(`http://localhost:7000/cards/${params.id}`),
 			},
 		],
 	},

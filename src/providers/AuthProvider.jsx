@@ -1,8 +1,8 @@
 import React, { createContext } from "react";
-import { getAuth } from "firebase/auth";
+// import { getAuth } from "firebase/auth";
 export const AuthContext = createContext(null);
 
-const auth = getAuth(app);
+// const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
 	const user = { displayName: "asdasd" };
