@@ -1,11 +1,11 @@
 
-**Project Name: WorkHive**
+**Project Name: FlavorFusion**
 
 ### Code Link: (https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-isratjmn)
 
 ### Live Website Link: (https://jocular-douhua.netlify.app/)
 
-### choose a name for the website that reflects the Mediterranean cuisine and the purpose of the website, such as "FlavorFusion" or "Cuisine of the Med."
+### choose a name for the website that reflects the Mediterranean cuisine and the purpose of the website, such as "FlavorFusion"
 
 * Create a navbar with the website name, Home, Blog, and User Profile Picture. If the user is not signed in, the navbar should show the Login button. If the user hovers over the profile picture, their name should appear.
 

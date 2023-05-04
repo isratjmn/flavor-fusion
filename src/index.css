@@ -6,3 +6,10 @@
 .main-container {
     @apply mx-auto w-[90%] md:w-[60%] lg:w-[75%] max-w-[1400px]
 }
+
+.active {
+    @apply block py-2 pl-3 pr-4 text-lg font-bold text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500
+}
+.default {
+    @apply py-2 pl-3 pr-4 text-lg font-bold tracking-wide text-gray-600 transition-colors duration-200 hover:text-cyan-600
+}

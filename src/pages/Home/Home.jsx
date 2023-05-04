@@ -42,10 +42,12 @@ const Home = () => {
 						/>
 						<div className="absolute top-[400px] left-96">
 							<h1 className="w-[70%] font-extrabold text-5xl text-center">
-								Welcome to <br />{" "}
+								Welcome to 
+								<br />
+								
 								<span className="text-red-600">
-									{" "}
-									Mediterranean Delights
+									{"  "}
+									Flavor Fusion
 								</span>
 							</h1>
 							<p className="w-[70%] text-lg pt-2 text-center">
