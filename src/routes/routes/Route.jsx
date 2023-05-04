@@ -11,11 +11,13 @@ import VewRecipes from "../../component/VewRecipes";
 import PrivetRoute from "../PrivetRoute";
 import BlogLayout from "../../layout/BlogLayout";
 import Blog from "../../pages/Blog";
+import ErrorPage from "../../component/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <MainLayout />,
+		errorElement: <ErrorPage></ErrorPage>,
 		children: [
 			{
 				path: "/",
