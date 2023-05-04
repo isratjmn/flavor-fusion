@@ -2,14 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.main-container {
-    @apply mx-auto w-[90%] md:w-[60%] lg:w-[75%] max-w-[1400px]
+.btn-primary {
+    @apply px-5 py-2 bg-primary text-white rounded-md transition-all duration-150 cursor-pointer
 }
 
-.active {
-    @apply block py-2 pl-3 pr-4 text-lg font-bold text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500
+.btn-primary:hover {
+    @apply transform scale-[1.1]
 }
-.default {
-    @apply py-2 pl-3 pr-4 text-lg font-bold tracking-wide text-gray-600 transition-colors duration-200 hover:text-cyan-600
+
+.LazyLoad {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.5s ease-in-out;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 2.5s ease-in-out;
+    -ms-transition: all 2.5s ease-in-out;
+    -o-transition: all 2.5s ease-in-out;
+}
+
+.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.blog-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+    
 }
