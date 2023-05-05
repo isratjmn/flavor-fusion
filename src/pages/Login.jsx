@@ -23,7 +23,6 @@ const Login = () => {
                 navigate(from, { replace: true });
             })
             .catch(err => setError(err.message));
-
     };
 
     const handleLoginGoogle = () => {
@@ -45,7 +44,7 @@ const Login = () => {
             .catch(err => setError(err.message));
     };
     return (
-        <div className="max-w-sm mt-28 mx-auto shadow-xl ">
+        <div className="max-w-sm my-36 mx-auto shadow-xl ">
             <Card>
                 <div className='text-red-700 flex space-x-2'> {error && <FaExclamation className='w-5 h-5 text-teal-950'></FaExclamation>} <span>{error}</span> </div>
                 <form className="flex flex-col gap-4" onSubmit={handleLoginWithEmailPass}>
@@ -85,11 +84,11 @@ const Login = () => {
                 <span className='font-popins'>Do not have an account <Link to='/login/register' className='text-primary font-semibold underline'>Register</Link></span>
                 <div className='flex justify-evenly mt-5'>
                     <button onClick={handleLoginGoogle} className='flex items-center bg-lime-800 px-3 py-2 rounded-md shadow-md'>
-                        <FaGoogle className='w-8 w-8 text-yellow-400' />
+                        <FaGoogle className='w-8text-yellow-400' />
                         <span className='font-popins text-white font-semibold'>GOOGLE</span>
                     </button>
                     <button onClick={handleLoginGithub} className='flex items-center bg-blue-900 px-3 py-2 rounded-md shadow-md'>
-                        <FaGithub className='w-8 w-8 text-yellow-400' />
+                        <FaGithub className='w-8 text-yellow-400' />
                         <span className='font-popins text-white font-semibold'>GITHUB</span>
                     </button>
                 </div>

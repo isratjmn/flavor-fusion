@@ -10,8 +10,8 @@ const Chef = ({ chef }) => {
     return (
         <div className="max-w-sm">
             <Card>
-                <LazyLoad height={300}  offset={50}>
-                    <img className='h-[300px] w-full'  src={image} alt="" />
+                <LazyLoad height={300} offset={50}>
+                    <img className='h-[300px] w-full' src={image} alt="" />
                 </LazyLoad>
                 <div className='flex justify-between mt-6'>
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -24,7 +24,7 @@ const Chef = ({ chef }) => {
                     <p>{recipes.length} Recipes</p>
                 </div>
 
-                <Link to={`/chef/${id}`} className='btn-primary py-5'>View Recipes </Link>
+                <Link to={`/chef/${id}`} className='bg-red-600 py-3 px-4 text-white rounded-lg'>View Recipes</Link>
             </Card>
         </div>
     );
