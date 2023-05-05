@@ -29,7 +29,7 @@ const Recepi = ({recipe}) => {
             <button disabled={!favaroite} onClick={handleFavaroute}> <FaHeart className={  favaroite? 'w-5 h-5 text-zinc-300 shadow-xl': 'w-5 h-5 text-red-800 shadow-xl' } /></button>
         </div>
         <p>{recipe?.cookingMethod.slice(0, 120)}</p>
-        <h4 className="text-2xl font-medium tracking-tight text-gray-900 dark:text-white">
+        <h4 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             Ingredients:
         </h4>
         <div className='mb-10'>
@@ -41,7 +41,7 @@ const Recepi = ({recipe}) => {
         </div>
         <div className='flex space-x-2 items-center'>
             <Rating style={{ maxWidth: 150 }} value={recipe.ratting} readOnly />
-            <span>
+            <span className='font-bold'>
                 {recipe.ratting}
             </span>
         </div>

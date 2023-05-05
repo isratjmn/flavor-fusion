@@ -16,7 +16,7 @@ import { FaPhoneAlt, FaMapMarkerAlt, FaRegEnvelope } from "react-icons/fa";
 const Footers = () => {
 	return (
 		<div>
-			<footer className="section bg-gray-800 text-white">
+			<footer className="section px-4 bg-gray-800 text-white">
 				<div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-10 mb-8 mx-auto w-full max-w-screen-xl">
 					<div className="mb-6 md:mb-0">
 						<img

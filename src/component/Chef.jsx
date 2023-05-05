@@ -9,9 +9,9 @@ const Chef = ({ chef }) => {
     const { id, name, image, experience, recipes, likes } = chef;
     return (
         <div className="max-w-sm">
-            <Card>
+            <Card className=''>
                 <LazyLoad height={300} offset={50}>
-                    <img className='h-[300px] w-full' src={image} alt="" />
+                    <img className='h-[300px] w-[95%]' src={image} alt="" />
                 </LazyLoad>
                 <div className='flex justify-between mt-6'>
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

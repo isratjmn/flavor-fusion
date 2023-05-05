@@ -20,7 +20,6 @@ const Chefs = () => {
     }, []);
 
     /*if (isLoading) {
-
         return <div className='absolute inset-0 bg-black z-50'>
             <Button color="gray" className='mx-auto'>
                 <Spinner aria-label="Alternate spinner button example" />
@@ -44,7 +43,7 @@ const Chefs = () => {
                     <h3 className='text-center lg:me-40 font-popins font-semibold text-5xl my-3'>Professional Chefs</h3>
                 </div>
             </div>
-            <div className="grid md:grid-cols-3 gap-8 mt-20">
+            <div className="grid md:grid-cols-2 w-[90%] lg:w-full mx-auto main-container lg:grid-cols-3 gap-4 mt-20">
                 {
                     chefs.map(chef => <Chef chef={chef} key={chef.id} />)
                 }

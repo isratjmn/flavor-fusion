@@ -13,8 +13,8 @@ const VisitUs = () => {
 					<p className="my-5 flex items-center gap-3 b-6 text-base font-semibold dark:text-white">
 						{" "}
 						<FaMapMarkerAlt />
-						121 Rock Sreet, 21 Avenue, <br />
-						Pakistan, NY 92103-9000
+						150 Duffy Ave, Hicksville,<br />
+						NY 11801, USA 
 					</p>
 
                     <h4 className="font-bold text-[1.5rem] mb-3 mt-4 text-red-700">

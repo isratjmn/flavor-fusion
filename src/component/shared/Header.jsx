@@ -1,18 +1,15 @@
 import { Avatar, Button, Dropdown, Navbar } from "flowbite-react";
 import React, { useContext, useState } from "react";
-import logo from "/assets/cf-logo.png";
 import { Link, NavLink, Navigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
-import Loader from "./Loader";
+import { FaUserCircle } from "react-icons/fa";
+
 
 const Header = ({ login }) => {
 	const { user, logOut, loading } = useContext(AuthContext);
 	const handleLogOut = () => {
 		logOut();
 	};
-	/*if (loading) {
-        return <Loader/>
-    } */
 	return (
 		<div
 			style={login && { background: "black", top: "0" }}
@@ -27,7 +24,7 @@ const Header = ({ login }) => {
 					<Link to="/">
 						<img
 							src="https://i.ibb.co/wM5KgLt/hot-pot.png"
-							className="md:mr-3 mb-2 ml-12 sm:h-9 h-24"
+							className="md:mr-3 mb-2 ml-6 lg:ml-12 sm:h-9 h-24"
 							alt="img"
 						/>
 					</Link>
@@ -44,7 +41,7 @@ const Header = ({ login }) => {
 							label={
 								<Avatar
 									alt="user"
-									img={user?.photoURL}
+									img={user && (<FaUserCircle className="fs-1" />) ?.photoURL}
 									rounded={true}
 								/>
 							}
