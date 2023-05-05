@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+
 import { Card, Label, TextInput } from "flowbite-react";
 import React, { useContext, useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
@@ -34,7 +34,7 @@ const Register = () => {
 	};
 
 	return (
-		<div className="max-w-sm my-36 mx-auto shadow-xl ">
+		<div className="max-w-sm my-56 mx-auto shadow-xl ">
 			<Card>
 				<div className="text-red-700 flex space-x-2">
 					{" "}

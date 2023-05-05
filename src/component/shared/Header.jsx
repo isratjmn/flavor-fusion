@@ -73,7 +73,7 @@ const Header = ({ login }) => {
 						to="/"
 						className={({ isActive }) =>
 							isActive
-								? "text-primary text-xl"
+								? "text-primary text-xl mb-3 font-semibold"
 								: " text-black md:text-inherit text-xl"
 						}
 					>
@@ -83,7 +83,7 @@ const Header = ({ login }) => {
 						to="/blog"
 						className={({ isActive }) =>
 							isActive
-								? "text-primary text-xl"
+								? "text-primary text-xl font-semibold"
 								: "text-black md:text-inherit text-xl"
 						}
 					>

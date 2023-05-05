@@ -1,13 +1,12 @@
-/* eslint-disable no-unused-vars */
+
 import React from "react";
-import banner from "/assets/home-banner.jpg";
 const Banner = () => {
 	return (
 		<div className={`px-8 md:px-20  bg-[url('/assets/home-banner.jpg')] bg-center bg-no-repeat relative z-20 `}>
 			<div className="absolute inset-0 bg-[rgba(0,0,0,0.7)] z-[1] "></div>
 			<div className="flex items-center">
 				<div className=" md:w-2/4 text-white z-40 relative py-28">
-					<h2 className="font-vibes mt-36 md:text-5xl text-red-600 ">
+					<h2 className="font-vibes mt-36 text-3xl md:text-5xl text-red-600 ">
 						Welcome to
 						<div className="md:w-48 h-[3px] bg-red-700 inline-flex ms-3 mb-2 font-bold"></div>
 					</h2>
