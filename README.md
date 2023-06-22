@@ -1,8 +1,8 @@
 ﻿# FlavorFusion
 
 
-### Client Site Code Link: (https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-isratjmn)
-### Server Site Code Link: (https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-isratjmn/commits/main)
+### Client Site Code Link: (https://github.com/isratjmn/flavor-fusion)
+### Server Site Code Link: (https://github.com/isratjmn/flavor-fusion-server)
 
 ### Live Website Link: (https://flavor-fusion-3b6cc.web.app/)
 
